@@ -27,13 +27,11 @@ a {
 }
 
 .button {
-  /* width: 100%; */
   padding: 10px;
   background-color: #6ac6f0;
   border: none;
   color: white;
   font-size: 14px;
-  /* font-weight: bold; */
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s;

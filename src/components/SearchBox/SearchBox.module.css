@@ -1,8 +1,8 @@
 .container {
   max-width: 400px;
-  margin: 0 auto; /* Центрирование формы на странице */
+  margin: 0 auto;
   padding: 20px;
-  border-radius: 8px; /* Закругленные углы */
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: baseline;
@@ -18,7 +18,7 @@
 .input {
   padding: 8px;
   font-size: 16px;
-  border: 1px solid #ccc; /* Граница инпута */
+  border: 1px solid #ccc;
   border-radius: 4px;
   transition: border-color 0.3s;
 }

@@ -13,6 +13,6 @@ const filtersSlice = createSlice({
 });
 
 export const { setFilter } = filtersSlice.actions;
-export const selectNameFilter = (state) => state.filters.value; // Додано селектор для отримання фільтра
+export const selectNameFilter = (state) => state.filters.value;
 
 export default filtersSlice.reducer;
