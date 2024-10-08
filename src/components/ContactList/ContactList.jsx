@@ -24,7 +24,7 @@ export default function ContactList() {
   const filteredContacts = getFilteredContacts();
 
   return (
-    <ul className={css.list}>
+    <ul className={css.listcontact}>
       {filteredContacts.length > 0 ? (
         filteredContacts.map((contact) => (
           <li key={contact.id}>
