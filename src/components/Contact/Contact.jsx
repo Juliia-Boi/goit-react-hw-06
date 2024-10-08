@@ -1,8 +1,16 @@
 import css from "../Contact/Contact.module.css";
 import { BsTelephonePlus } from "react-icons/bs";
 import { FaUserCheck } from "react-icons/fa6";
+import { useDispatch } from "react-redux";
+import { deleteContact } from "../../redux/contactsSlice";
 
-export default function Contact({ contact: { name, number, id }, onDelete }) {
+export default function Contact({ contact: { name, number, id } }) {
+  const dispatch = useDispatch();
+
+  const handleDelete = () => {
+    dispatch(deleteContact(id));
+  };
+
   return (
     <div className={css.container}>
       <div className={css.contactContainer}>
@@ -15,7 +23,7 @@ export default function Contact({ contact: { name, number, id }, onDelete }) {
           <p>{number}</p>
         </a>
       </div>
-      <button type="button" className={css.button} onClick={() => onDelete(id)}>
+      <button type="button" className={css.button} onClick={handleDelete}>
         Delete
       </button>
     </div>
